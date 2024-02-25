@@ -3,8 +3,8 @@
 layout: post
 title:  "Post Name"
 author: Nels Schulzke
-description: To learn data science, there must be a theoretical foundation. But to love data science, there must be a pragmatic education.
-image: /assets/images/blog-image.jpg
+description: "To learn data science, there must be a theoretical foundation. But to love data science, there must be a pragmatic education."
+image: /assets/images/first.png
 ---
 
 From Theory to Triumph: The Power of Practical Experience in Data Science
