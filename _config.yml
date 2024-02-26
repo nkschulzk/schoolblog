@@ -21,7 +21,7 @@
 title: The Grit Factor in Education
 email: nkschulzk@gmail.com
 description: "This blog is to focus on the efficacy and utility of challenging learning experiences" 
-baseurl: "/realblog" # the name of the repository 
+baseurl: "/schoolblog" # the name of the repository 
 url: "https://nkschulzk.github.io" #  change this to "https://<your-github-username>.github.io"
 image: /assets/images/headerimg.jpg
 author: Nels Schulzke
