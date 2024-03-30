@@ -2,7 +2,7 @@
 layout: post
 title:  "Scraping Your Way To Strategic Skiing"
 author: Nels Schulzke
-description: "This is an example of how to use webscraping and how a problem to solve teaches more than a problem set to complete. How webscraping can help inform strategic decision making"
+description: "How can you use datascraping to make million dollar decisions and hedge against external factors that jeopardize revenue? Learn how below"
 image: "/assets/images/ski.avif"
 ---
 # Ethical Data Collection and Scraping: Ensuring Quality Weather Data for Skiing Conditions Analysis
@@ -17,9 +17,14 @@ Imagine you're a strategic advisor to Veil Resorts, a global leader in skiing an
 
 Respecting the terms of service and ensuring ethical data collection were paramount, especially for a company like Veil Resorts, known for its commitment to sustainability and ethical practices. I opted to scrape weather data from [Wunderground](https://www.wunderground.com), a reputable source trusted by millions for accurate weather information. To ensure compliance, I meticulously reviewed Wunderground's terms of service and robots.txt file, ensuring that our data collection process aligned with their policies and guidelines. By adhering to these principles, I guaranteed that our data collection process was both ethical and permissible. There was an implemented delay, which I abided by in my code, but I additionally looped user agents to try to decrease the ware on the site from a given user agent.
 
-## Implementing Good Scraping Practices
+## Overall Strategy
+The overall strategy of getting the assembled data involves the following:
+1. Scrape the data from Wunderground.com
+2. Merge on the elevation data from Skiresort.info for the ski resort elevation
+3. Create adjustments in snow days and temperatures based on change in elevation between the ski resort and the weather station
 
-Scraping data from websites demands meticulous attention to detail and adherence to best practices, particularly for sensitive industries like skiing and resort management. The entirety of the scraping is based on this URL format: 
+## Nitty-Gritty
+To scrape through the weather data on Wunderground, the entirety of the scraping is based on this URL format: 
 
 https://www.wunderground.com/dashboard/pws/{station_code}/table/{start-date}/{end-date}/monthly
 
@@ -27,7 +32,7 @@ The general strategy is to iterate through the station code closest to the locat
 
 I had ChatGPT draft a skeleton code from what I wrote, to help you get started. The full code is in my Github Repo. 
 
-Here is the started code below:
+Here is the starter code below:
 
 ```python
 import requests
@@ -96,7 +101,7 @@ df.to_excel(output_file, index=False)
 ## Conclusion
 In this blog post, I've outlined my approach to ethical data collection and scraping practices using Python and data from Wunderground. By respecting terms of service, implementing robust scraping code, and adhering to best practices, I successfully gathered weather data for analyzing skiing conditions in resorts worldwide, crucial for strategic decision-making at Veil Resorts.
 
-Stay tuned for my next blog post, where I'll delve into the exciting world of exploratory data analysis (EDA) using the dataset we've created. In the meantime, feel free to explore the code and documentation in my GitHub repository linked below.
+Stay tuned for my next blog post, where I'll delve into the exciting world of exploratory data analysis (EDA) using the dataset we've created. In the meantime, please comment below. I would love to see how you could implement a Selenium approach to solving this scraping problem as well!
 
 GitHub Repository: [here](https://github.com/nkschulzk/webscraping-project)
 
