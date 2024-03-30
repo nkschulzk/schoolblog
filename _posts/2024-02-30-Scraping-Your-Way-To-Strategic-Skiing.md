@@ -19,11 +19,15 @@ Respecting the terms of service and ensuring ethical data collection were paramo
 
 ## Implementing Good Scraping Practices
 
-Scraping data from websites demands meticulous attention to detail and adherence to best practices, particularly for sensitive industries like skiing and resort management. I had ChatGPT draft a skeleton code from what I wrote, to help you get started. The entirety of the scraping is based on this URL format: 
+Scraping data from websites demands meticulous attention to detail and adherence to best practices, particularly for sensitive industries like skiing and resort management. The entirety of the scraping is based on this URL format: 
 
 https://www.wunderground.com/dashboard/pws/{station_code}/table/{start-date}/{end-date}/monthly
 
 The general strategy is to iterate through the station code closest to the location you care about, then iterate through the combinations of start date and end date.
+
+I had ChatGPT draft a skeleton code from what I wrote, to help you get started. The full code is in my Github Repo. 
+
+Here is the started code below:
 
 ```python
 import requests
