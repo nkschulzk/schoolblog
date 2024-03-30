@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Informed Data Analysis for Strategic Decision Making"
+title:  "Scraping Your Way To Strategic Skiing"
 author: Nels Schulzke
 description: "This is an example of how to use webscraping and how a problem to solve teaches more than a problem set to complete. How webscraping can help inform strategic decision making"
 image: "/assets/images/ski.avif"
